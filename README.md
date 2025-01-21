@@ -35,3 +35,18 @@ It uses a ring buffer to pass events between producers and consumers efficiently
 2. Event: A data structure representing a transaction or market data update.
 3. Producer: Publishes events to the ring buffer.
 4. Consumer: Processes events from the ring buffer.
+
+
+### Correlation Analysis: 
+HFT firms often use statistical models to identify correlations between different currency pairs. 
+By building positions in correlated currencies, they can construct prices that reflect these relationships. 
+For example, if EUR/USD and GBP/USD are highly correlated, the firm might use its position in one pair to infer the likely movement in the other.
+
+### Signal Generation: 
+Currency positions can be used to generate trading signals. 
+For instance, if a firm has a long position in a currency that is showing strength against a basket of other currencies, 
+it might use this signal to adjust its pricing and take advantage of the trend.
+
+### Delta Hedging: 
+HFT firms use their currency positions to hedge against adverse movements in exchange rates. 
+By constructing a delta-neutral portfolio, they can minimize their exposure to currency risk while still providing liquidity.
